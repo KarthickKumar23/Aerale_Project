@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/static/images/3.jpg');
+         background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+         margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase History for {{ username }}</h1>
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Timestamp</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Amount</th>
+            </tr>
+            {% for history in purchase_history %}
+                <tr>
+                    <td>{{ history[0] }}</td>
+                    <td>{{ history[2] }}</td>
+                    <td>{{ history[3] }}</td>
+                    <td>{{ history[4] }}</td>
+                    <td>{{ history[5] }}</td>
+                    <td>{{ history[6] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        
+        <a href="{{ url_for('dashboard') }}">Go back to dashboard</a>
+    </div>
+</body>
+</html>
