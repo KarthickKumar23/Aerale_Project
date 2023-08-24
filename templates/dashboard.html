@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Namma Kadai</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+   
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/namari-color.css') }}">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+    <!-- Animate CSS-->
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+
+
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <h1>NAMMA KADAI</h1>
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+                        
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li><a href="{{ url_for('login_page') }}" class="btn btn-primary" style="color: black ; font-size: larger ; padding-right: 3%; font: weight 500px;">Logout</a>
+                            </li>
+                            <li>--</li>
+                            <li>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Google+" href="http://google.com/+username">
+                                    <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>BEST PLACE TO BUY AND SELL THE PRODUCTS</h1>
+                    <h2>Namma Kadai is platform where we can buy and sell our product in one place!</h2>
+                </div>
+
+              
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Introduction-->
+        <section id="about" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>How it Works</h3>
+                        <h2 class="section-title">How We Help You To Sell Your Product</h2>
+                        <p class="section-subtitle">You can buy our product from this store and sell it in here</p>
+                    </div>
+
+                </div>
+
+               
+
+
+        
+
+
+     
+
+       <!--Pricing Tables-->
+       <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+        <div class="row clearfix">
+
+            <div class="section-heading">
+                <h3>YOUR CHOICE</h3>
+                <h2 class="section-title">Actions for you to do!</h2>
+            </div>
+
+            <!--Pricing Block-->
+            <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="pricing-block-content">
+                    <h3>BUY PRODUCTS</h3>
+                    <p class="pricing-sub">The standard version</p>
+                    <div class="pricing">
+                        
+                        <p>YOU CAN BUY PRODUCTS HERE</p>
+                    </div>
+                 
+                    <button class="button button1" onclick="window.location.href = '{{ buy_phase_url }}';">BUY TODAY</button>
+                </div>
+            </div>
+            <!--End Pricing Block-->
+
+            <!--Pricing Block-->
+            <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="pricing-block-content">
+                    <h3>SELL PRODUCTS</h3>
+                    <p class="pricing-sub">EARN MONEY HERE</p>
+                    <div class="pricing">
+                       
+                        <p>MANAGE YOUR FINANCE</p>
+                    </div>
+                    
+                    <button class="button button2" onclick="window.location.href = '{{ sell_phase_url }}';">SELL TODAY</button>
+                </div>
+            </div>
+            <!--End Pricing Block-->
+      
+            
+            <!--Pricing Block-->
+            <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="pricing-block-content">
+                    <h3>ADD ITEMS</h3>
+                    <p class="pricing-sub"></p>
+                    <div class="pricing">
+                        
+                        <p>YOU CAN ADD ITEMS</p>
+                    </div>
+                 
+                    <button class="button button1" onclick="window.location.href = 'add_item';">ADD</button>
+                </div>
+            </div>
+        </div>
+            <!--End Pricing Block-->
+
+                    <!--Pricing Block-->
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>VIEW ITEMS</h3>
+                            <p class="pricing-sub"></p>
+                            <div class="pricing">
+                                
+                                <p>YOU CAN VIEW ITEMS</p>
+                            </div>
+                         
+                            <button class="button button1" onclick="window.location.href = 'view_items';">VIEW</button>
+                        </div>
+                    </div>
+
+
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>VIEW PURCHASE HISTORY</h3>
+                            <p class="pricing-sub"></p>
+                            <div class="pricing">
+                                
+                                <p>YOU CAN VIEW HISTORY</p>
+                            </div>
+                         
+                            <button class="button button1" onclick="window.location.href = 'purchase_history';">VIEW</button>
+                        </div>
+                    </div>
+            
+
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>VIEW SOLD HISTORY</h3>
+                            <p class="pricing-sub"></p>
+                            <div class="pricing">
+                                
+                                <p>YOU CAN VIEW HISTORY</p>
+                            </div>
+                         
+                            <button class="button button1" onclick="window.location.href = 'sold_transaction_history';">VIEW</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-block-content">
+                            <h3>VIEW USER BALANCE</h3>
+                            <p class="pricing-sub">Access your balance</p>
+                            <div class="pricing">
+                                
+                                <p>YOU CAN VIEW YOUR BALANCE</p>
+                            </div>
+                         
+                            <button class="button button1" onclick="window.location.href = 'available_balance';">VIEW</button>
+                        </div>
+                    </div>
+
+
+
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+            
+
+            <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Google+" href="http://google.com/+username">
+                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                    </a>
+                </li>
+             
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+
+<!-- Include JavaScript resources -->
+<script src="/static/js/jquery.1.8.3.min.js"></script>
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/featherlight.min.js"></script>
+<script src="/static/js/featherlight.gallery.min.js"></script>
+<script src="/static/js/jquery.enllax.min.js"></script>
+<script src="/static/js/jquery.scrollUp.min.js"></script>
+<script src="/static/js/jquery.easing.min.js"></script>
+<script src="/static/js/jquery.stickyNavbar.min.js"></script>
+<script src="/static/js/jquery.waypoints.min.js"></script>
+<script src="/static/js/images-loaded.min.js"></script>
+<script src="/static/js/lightbox.min.js"></script>
+<script src="/static/js/site.js"></script>
+
+
+</body>
+</html>
